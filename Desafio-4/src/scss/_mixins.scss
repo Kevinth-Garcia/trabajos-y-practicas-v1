@@ -77,7 +77,7 @@
   transform: scale(1.05);
 }
 
-/*Prueba de media querist*/
+
 
   @mixin responsive($breakpoint) {
       @if $breakpoint =="lg" {

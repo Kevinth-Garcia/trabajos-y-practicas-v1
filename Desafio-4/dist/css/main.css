@@ -2,7 +2,6 @@
   transform: scale(1.05);
 }
 
-/*Prueba de media querist*/
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +40,6 @@ h2.seg-titulo {
   gap: 1rem;
 }
 
-/*prueba de clasificar a personajes por su color*/
 .eikons {
   display: flex;
 }

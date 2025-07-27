@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: georgian;
+    
+    
+    
+}
+
+body{
+
+    font-size: 1.6rem;
+      
+}
+
+
+.titulo {
+  font-size: 4rem;
+  text-align: center;
+  
+}
+
+.contenido {
+  padding: 1rem;
+  background-color: #000000;
+}
+
+.descripcion{
+  
+    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+h2.seg-titulo {
+    display: block;
+    text-align: center;
+    
+    
+}
+
+.bestias {
+  
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+/*prueba de clasificar a personajes por su color*/
+
+.eikons {
+
+  display: flex;
+  
+}
+
+.eikon {
+
+  border: 10px;
+  padding: 3rem;
+  width: 350px;
+  border-radius: 10px;
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+}
+
+// @for – clases dinámicas
+@for $i from 1 through 3 {
+  .padding-#{$i} {
+    padding: #{$i}rem;
+  }
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  
+}

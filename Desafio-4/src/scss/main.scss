@@ -1,0 +1,128 @@
+@use './variables';
+@use './mixins';
+@use './base';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: georgian;
+    
+    
+    
+}
+
+body{
+    font-family: variables.$fuente-base;
+    background-color: variables.$fondo;
+    color: variables.$texto;
+    @include mixins.estilo-de-body;
+    @include mixins.responsive("md") {
+        font-size: 1.6rem;
+      }
+    
+}
+
+
+.titulo {
+  @include mixins.estilo-de-encabezado;
+  font-size: 4rem;
+  text-align: center;
+  
+}
+
+.contenido {
+  padding: 1rem;
+  background-color: #000000;
+}
+
+.descripcion{
+   @include mixins.estilo-de-contenido;
+    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+h2.seg-titulo {
+    display: block;
+    background-color: variables.$color-primario;
+    color: variables.$texto;
+    text-align: center;
+    @include mixins.seg-titulo
+    
+}
+
+.bestias {
+  @include mixins.centrado-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+/*prueba de clasificar a personajes por su color*/
+
+@each $nombre, $color in variables.$eikon-colors {
+  .eikon.#{$nombre} {
+    border-left: 5px solid $color;
+    background-color: lighten($color, 20%);
+    box-shadow: 10px 10px 5px $color;
+    
+  }
+}
+
+.eikons {
+  @include mixins.eikons;
+  
+  display: flex;
+  color: variables.$color-texto-eikons;
+  text-shadow: 3px 2px 2px variables.$sombra-de-texto;
+  
+}
+
+.eikon {
+
+  @include mixins.eikon;
+  border: 10px;
+  padding: 3rem;
+  width: 350px;
+  border-radius: 10px;
+
+  h3 {
+    color: variables.$color-texto-eikons;
+    text-shadow: 2px 3px 2px variables.$sombra-de-texto;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+}
+
+// @for – clases dinámicas
+@for $i from 1 through 3 {
+  .padding-#{$i} {
+    padding: #{$i}rem;
+  }
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  background: variables.$color-primario;
+  
+}
+
+
+
+
+
+
+
+
+
+

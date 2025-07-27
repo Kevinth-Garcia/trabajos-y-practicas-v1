@@ -1,0 +1,27 @@
+$color-primario: #ab1111;
+$color-secundario: #840a0a;
+$texto: #ffffff;
+$fondo: #a2a2a2;
+$texto-footer: #ff0000;
+$fondo-de-cajas: #ed5656;
+$sombra-de-texto:#000000;
+$color-eikons: #ffffff;
+$color-texto-eikons:#ffffff;
+
+$eikon-colors: (
+    ifrit: #ff0000,
+    phoenix: #ff4000,
+    ramuh: #300487,
+    garuda: #136b3b,
+    shiva: #005ed1,
+    titan: #6c5301,
+    odin: #1c1a94,
+    bahamut: #335f8b
+);
+
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1200px;
+
+
+$fuente-base: Verdana, Geneva, Tahoma, sans-serif;

@@ -1,0 +1,16 @@
+{
+  "name": "desafio-4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.89.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

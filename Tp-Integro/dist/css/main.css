@@ -16,7 +16,7 @@ html {
 body {
   font-family: italic;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   min-height: 120vh;
@@ -46,7 +46,7 @@ footer {
   margin: 0 auto;
 }
 .header__logo {
-  color: #CCCCCC;
+  color: #cccccc;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -60,12 +60,12 @@ footer {
   gap: 1rem;
 }
 .nav__link {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
 .nav__link:hover {
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 /*contenido main*/
@@ -81,7 +81,7 @@ footer {
 
 .hero {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding: 3rem 1rem;
 }
@@ -91,7 +91,7 @@ footer {
 }
 .hero__text {
   font-size: 1.2rem;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 /*tarjeta de productos inspirada en tiendas actuales*/
@@ -101,7 +101,7 @@ footer {
   padding: 1rem;
 }
 .productos__title {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -117,7 +117,7 @@ footer {
   overflow: hidden;
   padding: 1rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .producto-card__img {
   max-width: 100%;
@@ -135,10 +135,10 @@ footer {
   display: block;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #CCCCCC;
+  color: #cccccc;
 }
 .producto-card__btn {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   color: #666666;
   padding: 0.5rem 1rem;
   border: none;
@@ -160,7 +160,7 @@ footer {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .carrito__table {
   width: 100%;
@@ -168,7 +168,7 @@ footer {
 }
 .carrito__table th,
 .carrito__table td {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   padding: 1rem;
   text-align: center;
 }
@@ -179,7 +179,7 @@ footer {
 /*sobre nosotros*/
 .about.container {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding: 40px 20px;
 }
@@ -236,13 +236,13 @@ footer {
   border-radius: 10px;
 }
 .contact.container h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 1.5rem;
   text-shadow: #333333 10px 4px 3px;
 }
 .contact.container label {
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: #333333 1px 4px 1px;
   display: block;
   margin: 0.5rem 0 0.2rem;
@@ -255,7 +255,7 @@ footer {
   border: none;
   border-radius: 5px;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1rem;
   font-family: italic;
   transition: all 0.3s ease;
@@ -268,7 +268,7 @@ footer {
 }
 .contact.container button {
   background-color: #666666;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 5px;
@@ -288,7 +288,7 @@ footer {
   text-align: center;
 }
 .footer__text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 0.9rem;
   text-shadow: #333333 1px 1px 1px;
 }

@@ -1,8 +1,7 @@
-@use './variables' as *;
-@use './mixins' as *;
+@use "./variables" as *;
+@use "./mixins" as *;
 
-
- /*Base del sitio web*/
+/*Base del sitio web*/
 
 * {
   margin: 0;
@@ -12,7 +11,8 @@
 
 html {
   height: 100%;
-  margin: 0;}
+  margin: 0;
+}
 
 body {
   font-family: $font-main;
@@ -22,21 +22,16 @@ body {
   flex-direction: column;
   min-height: 120vh;
   @include responsive("lg") {
-    
   }
 
   /* Estilos para tablet (<=768px) */
   @include responsive("tablet") {
-    
   }
 
   /* Estilos para móvil (<=480px) */
   @include responsive("mobile") {
-    
   }
 }
-
-
 
 main {
   flex: 1;
@@ -44,5 +39,5 @@ main {
 
 footer {
   text-align: center;
-    padding: 15px 0;
-  }
+  padding: 15px 0;
+}

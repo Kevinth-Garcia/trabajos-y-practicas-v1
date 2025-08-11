@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*responsive para dispositivos*/
+/*variables con posibilidad de cambios*/
+/*Base del sitio web*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: italic;
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh;
+  /* Estilos para tablet (<=768px) */
+  /* Estilos para móvil (<=480px) */
+}
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+}
+
+/*Barra principal*/
+.header {
+  background-color: #666666;
+  padding: 1rem;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header__logo {
+  color: #CCCCCC;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.nav__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav__link:hover {
+  color: #CCCCCC;
+}
+
+/*contenido main*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.hero {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.hero__title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.hero__text {
+  font-size: 1.2rem;
+  color: #CCCCCC;
+}
+
+/*tarjeta de productos inspirada en tiendas actuales*/
+.productos {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.productos__title {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.productos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.producto-card {
+  background-color: #333333;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+.producto-card__img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.producto-card__name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.producto-card__desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.producto-card__price {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #CCCCCC;
+}
+.producto-card__btn {
+  background-color: #CCCCCC;
+  color: #666666;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: italic;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto-card__btn:hover {
+  transform: scale(1.05);
+  background-color: rgb(229.5, 229.5, 229.5);
+}
+.producto-card__btn:hover img {
+  transform: scale(1.05);
+}
+
+.carrito {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  color: #FFFFFF;
+}
+.carrito__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.carrito__table th,
+.carrito__table td {
+  border: 1px solid #CCCCCC;
+  padding: 1rem;
+  text-align: center;
+}
+.carrito__table th {
+  background-color: #333333;
+}
+
+/*sobre nosotros*/
+.about.container {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 40px 20px;
+}
+.about.container h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: #333333 5px 7px 5px;
+}
+.about.container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-shadow: #333333 5px 5px 5px;
+}
+.about.container h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  text-shadow: #333333 5px 5px 5px;
+}
+
+/*imagen fachera doom guy con animacion */
+.seccion-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #000000;
+}
+
+.imagen-animada {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  animation: moverArribaAbajo 2s ease-in-out infinite;
+}
+
+/* Animación de arriba-abajo */
+@keyframes moverArribaAbajo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/*label para contactar*/
+.contact.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #333333;
+  border-radius: 10px;
+}
+.contact.container h1 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: #333333 10px 4px 3px;
+}
+.contact.container label {
+  color: #FFFFFF;
+  text-shadow: #333333 1px 4px 1px;
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+.contact.container input,
+.contact.container textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: italic;
+  transition: all 0.3s ease;
+}
+.contact.container input:focus,
+.contact.container textarea:focus {
+  outline: none;
+  background-color: #000000;
+  box-shadow: 0 0 5px #333333;
+}
+.contact.container button {
+  background-color: #666666;
+  color: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: italic;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact.container button:hover {
+  background-color: #000000;
+}
+
+/*pie de pagina*/
+.footer {
+  background-color: #333333;
+  padding: 1rem;
+  text-align: center;
+}
+.footer__text {
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  text-shadow: #333333 1px 1px 1px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,305 @@
+@use './mixins';
+@use './variables' as *;
+@use './base';
+
+
+
+/*Barra principal*/
+
+.header {
+  background-color: $color-primary;
+  padding: 1rem;
+
+  &__container {
+    @include mixins.flex-center(row, space-between, center);
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    color: $color-accent;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    @include mixins.flex-center(row, flex-start, center);
+    gap: 1rem;
+  }
+
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+/*contenido main*/
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+}
+
+.u-center {
+  text-align: center;
+}
+
+
+.hero {
+  background-color: $color-bg;
+  color: $color-text;
+  text-align: center;
+  padding: 3rem 1rem;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: $color-accent;
+  }
+}
+
+/*tarjeta de productos inspirada en tiendas actuales*/
+
+.productos {
+  max-width: $max-width;
+  margin: 2rem auto;
+  padding: 1rem;
+
+  &__title {
+    color: $color-text;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+}
+
+.producto-card {
+  background-color: $color-secondary;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  color: $color-text;
+  
+
+  &__img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  &__desc {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: $color-accent;
+  }
+
+  &__btn {
+    background-color: $color-accent;
+    color: $color-primary;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: $font-main;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: lighten($color-accent, 10%);
+
+      img {
+          transform: scale(1.05);}
+    }
+  }
+}
+
+.carrito {
+  max-width: $max-width;
+  margin: 2rem auto;
+  padding: 2rem;
+  color: $color-text;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid $color-accent;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    th {
+      background-color: $color-secondary;
+    }
+  }
+
+}
+
+/*sobre nosotros*/
+
+.about.container{
+  background-color: $color-bg; 
+  color: $color-text;
+  text-align: center;
+  padding: 40px 20px;
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: $text-shadow 5px 7px 5px; 
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px; 
+    margin: 0 auto 20px auto;
+    text-shadow: $text-shadow 5px 5px 5px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-shadow: $text-shadow 5px 5px 5px;
+  }
+
+}
+/*imagen fachera doom guy con animacion */
+
+.seccion-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: $color-bg;
+ 
+}
+
+.imagen-animada {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  animation: moverArribaAbajo 2s ease-in-out infinite;
+}
+
+/* Animación de arriba-abajo */
+@keyframes moverArribaAbajo {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/*label para contactar*/
+
+  .contact.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: $color-secondary;
+  border-radius: 10px;
+
+
+  h1 {
+    color: $color-text;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: $text-shadow 10px 4px 3px ;
+  }
+
+  label {
+    color: $color-text;
+    text-shadow: $text-shadow 1px 4px 1px ;
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $color-bg;
+    color: $color-text;
+    font-size: 1rem;
+    font-family: $font-main;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      background-color: $color-bg;
+      box-shadow: 0 0 5px $color-secondary;
+    }
+  }
+
+  button {
+    background-color: $color-primary;
+    color: $color-text;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: $font-main;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $color-bg;
+    }
+  }
+}
+
+/*pie de pagina*/
+
+.footer {
+  background-color: $color-secondary;
+  padding: 1rem;
+  text-align: center;
+
+  &__text {
+    color: $color-text;
+    font-size: 0.9rem;
+    text-shadow: $text-shadow 1px 1px 1px;
+  }
+}

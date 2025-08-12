@@ -1,8 +1,11 @@
-VISITA MI NUEVA TIENDA 
+VISITA MI NUEVA TIENDA  😎😎😎😎
 
-**ItsKagz Store** es un sitio web de ejemplo para una tienda online.  
-Incluye una página de inicio, productos, carrito, sección de contacto y sobre nosotros.  
-Diseñado con HTML5, SCSS y responsive design.
+https://itskagz-store.vercel.app
+
+**ItsKagz Store** 
+
+Bienvenido a la tienda donde el respawn es en tu armario. 💥
+Somos una marca de ropa urbana con alma gamer: camisetas, sudaderas, gorras y accesorios inspirados en tus videojuegos favoritos, diseñados para que lleves tu pasión por el gaming a las calles. Aquí no solo vistes moda, vistes tu mundo. 🎮🔥
 
 # 🚀 Características
 
@@ -17,5 +20,6 @@ Diseñado con HTML5, SCSS y responsive design.
 - HTML5
 - SCSS / SASS
 
-compilado con css
+En el cual se transforma a css
+
 

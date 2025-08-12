@@ -22,7 +22,7 @@
     "to-regex-range": "^5.0.1"
   },
   "scripts": {
-    "sass": "sass --watch src/scss:dist/css"
+    "sass": "sass --watch src/scss:src/dist"
   },
   "keywords": [],
   "author": "",

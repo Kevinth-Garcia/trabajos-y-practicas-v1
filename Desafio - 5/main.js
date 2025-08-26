@@ -1,6 +1,8 @@
 
-const titulo = document.getElementById(`titulo`);
-titulo.textContent = `Este es un titulo que cambia`;
+/*titulo con js*/
+
+const titulo = document.getElementById("titulo");
+titulo.textContent = "Este es un titulo que cambia con Javascript";
 
 const lista = `
 
@@ -13,10 +15,15 @@ const lista = `
 </ul>
 `;
 
-const contenedor = document.getElementById(`contenedor`);
+/*lista con js*/
+
+const contenedor = document.getElementById("contenedor");
 contenedor.innerHTML = lista;
 
-const boton = document.getElementById(`boton`);
-boton.addEventListener = ("click", () => {
-    alert("SE HIZO CLICK EN EL BOTON")
+/*alerta prueba*/
+
+const boton = document.getElementById("boton");
+
+boton.addEventListener ("click", () => {
+    alert("Se hizo Click en el boton")
 });

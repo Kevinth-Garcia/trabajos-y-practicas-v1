@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Caja de movimiento-->
+
+    <div class="caja" id="cajaMouse">Pasa el mouse</div>
+
+    <!--Cordenadas de Movimiento-->
+
+    <div class="infoFija">
+      Detector de movimiento
+      <div id="coords">X: 0 - Y: 0</div>
+      <div id="scrollPos">Scroll Y: 0</div>
+    </div>
+
+    <!--Input de Nombre con Jscript-->
+
+    <section id="nombre">
+      <h2>Ingresa tu nombre</h2>
+      <input type="text" id="inputNombre" placeholder="Escribe tu nombre..." />
+      <button id="btnNombre">Mostrar Nombre</button>
+      <h2 id="nombreMostrado"></h2>
+    </section>
+
+    <!--Lista de Arreglo con Jscript-->
+
+    <section id="arreglo">
+      <h2>Arreglo de Objetos</h2>
+      <button id="btnArreglo">Mostrar Objetos</button>
+      <div id="contenedorTarjetas" class="tarjetas"></div>
+    </section>
+  </body>
+</html>

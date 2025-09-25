@@ -1,0 +1,48 @@
+section {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgb(185, 158, 186);
+  box-shadow: 0 2px 5px rgba(124, 66, 66, 0.1);
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background: #9d00ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f15bfc;
+}
+
+/*Estilado de Tarjetas*/
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tarjeta {
+  border: 1px solid #b008e3;
+  border-radius: 20px;
+  padding: 15px;
+  width: 200px;
+  background: #dfa7e6;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 1px black;
+}

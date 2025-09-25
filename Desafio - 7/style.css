@@ -1,48 +1,156 @@
-section {
-  margin: 20px 0;
-  padding: 15px;
-  border-radius: 8px;
-  background: rgb(185, 158, 186);
-  box-shadow: 0 2px 5px rgba(124, 66, 66, 0.1);
+body{
+  background-color: #4f1d6e
 }
 
-button {
-  padding: 8px 15px;
-  border: none;
-  background: #9d00ff;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s;
+.Titulo{
+
+font-size: 3rem;
+text-align: center;
+text-shadow: 2px 2px 3px #dfa7e6;
+background-color: #eec0f4;
+border-radius: 5px 5px 3px;
+padding: 10px;
+box-shadow: 3px 5px 5px #6f0b4c;
+font-style: italic;
+
 }
 
-button:hover {
-  background-color: #f15bfc;
-}
 
-/*Estilado de Tarjetas*/
 
+
+/* Contenedor de tarjetas */
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
+  justify-content: center; 
   margin-top: 20px;
+  padding: 10px;
 }
 
+/* Tarjeta individual */
 .tarjeta {
-  border: 1px solid #b008e3;
+  border: none;
   border-radius: 20px;
   padding: 15px;
-  width: 200px;
-  background: #dfa7e6;
+  width: 230px;
+  background: #eec0f4;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover con efecto "levitación" */
+.tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen del producto */
 .tarjeta img {
   width: 100%;
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Nombre del producto */
+.tarjeta h3 {
+  font-size: 1.2rem;
+  color: #4a2040;
+  margin-bottom: 8px;
+  font-style: italic;
+  font-size: x-large;
+}
+
+/* Texto */
+.tarjeta p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 5px 0;
+
+}
+
+/* Precio destacado */
+.tarjeta p strong {
+  color: #9d00ff;
+  font-weight: bold;
+  font-size: 1rem;
+  
+}
+
+/* Botón dentro de cada tarjeta */
+.tarjeta button {
+  padding: 10px 15px;
+  border: none;
+  background: #9d00ff;
+  color: white;
   border-radius: 8px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 1px black;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tarjeta button:hover {
+  background: #f15bfc;
+  transform: scale(1.05);
+}
+
+#carritoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  min-height: 50vh;
+  background: linear-gradient(135deg, #e6a7ce, #dfa7e6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+#carritoSection h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #5c174c;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+#carritoSection table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+#carritoSection thead {
+  background: #9d00ff;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#carritoSection th, 
+#carritoSection td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+#carritoSection tbody tr:hover {
+  background: #fbe9f1;
+  transition: background 0.3s ease-in-out;
+}
+
+#carritoSection td {
+  color: #6b1515;
+  font-size: 2rem;
 }

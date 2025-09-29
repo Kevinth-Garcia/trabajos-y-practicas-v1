@@ -4,7 +4,7 @@ const carrito = document.getElementById("carrito");
 let productos = [];
 let carritoProductos = [];
 
-// ---------------- FUNCIONES ----------------
+//FUNCIONES
 
 // Mostrar productos en catálogo
 function mostrarProductos(lista) {
@@ -57,7 +57,7 @@ function mostrarCarrito() {
   });
 }
 
-// ---------------- FETCH ----------------
+// FETCH
 
 fetch("data.json")
   .then((res) => res.json())

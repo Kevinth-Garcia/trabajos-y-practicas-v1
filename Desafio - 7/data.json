@@ -1,5 +1,5 @@
- [
-   {
+[
+  {
     "id": 1,
     "image": "https://m.media-amazon.com/images/I/51WpZbC4dsL._UY900_.jpg",
     "name": "Zapatos de Vestir",
@@ -8,30 +8,30 @@
   },
   {
     "id": 2,
-    "image":"https://http2.mlstatic.com/D_NQ_NP_626986-MLV49155053728_022022-O.webp",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_626986-MLV49155053728_022022-O.webp",
     "name": "Camiseta Blanca",
     "price": "$20",
     "description": "Camiseta de color blanco para salir, talla M."
   },
   {
     "id": 3,
-    "image":"https://cdn.grupoelcorteingles.es/statics/manager/contents/images/uploads/2025/03/H1-jwm6c3Jg.jpeg?impolicy=Resize&width=800&height=800",
+    "image": "https://cdn.grupoelcorteingles.es/statics/manager/contents/images/uploads/2025/03/H1-jwm6c3Jg.jpeg?impolicy=Resize&width=800&height=800",
     "name": "Pantalones de Mujer",
     "price": "$70",
     "description": "Pantalones de mujer con remangado, Talla 28x29."
   },
   {
     "id": 4,
-    "image":"https://mauiandsons.com.pe/media/catalog/product/cache/b21485b3694be439526e31032542a8d9/5/g/5g825-mi25lisoblack-1.jpg",
+    "image": "https://mauiandsons.com.pe/media/catalog/product/cache/b21485b3694be439526e31032542a8d9/5/g/5g825-mi25lisoblack-1.jpg",
     "name": "Gorro de salir",
     "price": "$40",
     "description": "Gorro de color negro ideal para el frio"
   },
   {
     "id": 5,
-    "image":"https://rmk-store.com/cdn/shop/files/6_1abd45cf-a383-4c32-bdba-51d67756cc4e.png?v=1685023782&width=1946",
+    "image": "https://rmk-store.com/cdn/shop/files/6_1abd45cf-a383-4c32-bdba-51d67756cc4e.png?v=1685023782&width=1946",
     "name": "Hoodie",
     "price": "$50",
     "description": "Hoodie de color verde ideal para el frio, Talla L"
   }
- ]
+]

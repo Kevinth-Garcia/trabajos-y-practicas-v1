@@ -1,10 +1,24 @@
+import { useNavigate } from "react-router-dom";
+
 function Home() {
+  const navigate = useNavigate(); // hook de navegación
+
+  const irAProductos = () => {
+    navigate("/productos"); // redirige a /productos
+  };
+
   return (
-    <div>
-      <h1 className="Titulo">REACT STORE</h1>
-      <p className="texto">Bienvenido a nuestra tienda online hecha con React.</p>
-      </div>
-      
+    <div className="home">
+      <h1 className="Bienvenida">Bienvenido a la Tienda ItsKagz</h1>
+      <p className="Texto-bienvenida">
+        Explora nuestros productos gamer con los mejores precios y estilo.
+      </p>
+
+      {/* Botón que usa useNavigate */}
+      <button onClick={irAProductos} className="btn-ver-productos">
+        Ver productos
+      </button>
+    </div>
   );
 }
 

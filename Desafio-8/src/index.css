@@ -1,9 +1,48 @@
 body {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #ffffff;
   margin: 0;
   padding: 0;
-  list-style: none;
+}
+
+.home {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.Bienvenida {
+  color: rgb(210, 31, 234);
+  display: block;
+  font-size: 5rem;
+  font-style: italic;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 2px 3px #374a4f;
+}
+
+.Texto-bienvenida {
+  font-size: x-large;
+  font-style: italic;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 2px 2px #374a4f;
+}
+
+.btn-ver-productos {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-ver-productos:hover {
+  background-color: #0099cc;
+  transform: scale(1.05);
 }
 
 .navbar {
@@ -15,7 +54,6 @@ body {
 }
 
 .link {
-
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -25,43 +63,133 @@ body {
   text-decoration: underline;
 }
 
-.Titulo{
+.Titulo {
   color: aqua;
   display: block;
   font-size: 10rem;
   font-style: italic;
-  align-items:center;
+  align-items: center;
   text-align: center;
   text-shadow: 1px 2px 3px #374a4f;
 }
 
-.texto{
+.texto {
   display: block;
   align-items: center;
   text-align: center;
   font-size: x-large;
   font-weight: bold;
-
 }
 
 .Lista {
-   padding: 10px 0;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
+  padding: 10px 30px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+  list-style: none;
 }
 
 .Objetos {
-    background-color: #c603b9;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fefcfb;
-    box-shadow: 0 2px 10px #0A1128;
-    transition: transform 0.3s ease;
+  background-color: #c603b9;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fefcfb;
+  box-shadow: 0 2px 10px #0a1128;
+  transition: transform 0.3s ease;
 }
 
 .Objetos:hover {
-    transform: scale(1.05);
+  transform: scale(1.04);
+}
+
+.DetalleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #f3e8ff, #ffffff);
+}
+
+.DetalleCard {
+  background-color: #9d00ff;
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.DetalleCard:hover {
+  transform: scale(1.03);
+}
+
+.DetalleNombre {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.DetalleDescripcion {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #f3f3f3;
+}
+
+.DetallePrecio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.BotonDetalles {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #9d00ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.BotonDetalles:hover {
+  background-color: #d8b4ff;
+  color: #4a007e;
+}
+
+.BotonVolver {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #9d00ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.BotonVolver:hover {
+  background-color: #d8b4ff;
+  color: #4a007e;
+}
+
+.Error{
+  color: aqua;
+  display: block;
+  font-size: 10rem;
+  font-style: italic;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 2px 3px #374a4f;
+}
+.ups{
+  font-size: x-large;
+  font-style: italic;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 2px 2px #374a4f;
 }
